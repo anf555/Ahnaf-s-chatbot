@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href={{ url_for('static', filename='bootstrap.min.css')}} rel="stylesheet">
+    <title>You are banned!</title>
+</head>
+<body>
+    <div style="height: 50px;"></div>
+    <div class="container">
+        <div class="alert alert-danger" role="alert">
+            <h4 class="alert-heading">You are banned!</h4>
+            <p>The reason you are banned maybe because you break on of the rules below : </p>
+            <li style="text-align: center;">No swearing</li>
+            <li style="text-align: center;">No spamming</li>
+            <li style="text-align: center;">Not sending any sensitive/private information</li>
+            <hr>
+            <p class="mb-0">If you think this is a mistake try contacting <a href="/support" class="alert-link">support center</a></p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahnaf's Chatbot</title>
+    <link href={{ url_for('static', filename='bootstrap.min.css')}} rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div style="height: 20px;"></div>
+    <div class="card" style="width: 100%; border-color: {{ bordercolor }}; height: 80%;">
+      <div class="card-body">
+      <p class="card-text">{{ prompt_responds }}</p>
+    </div>
+  </div>
+<div class="navbar fixed-bottom center" style="width: 100%;">
+  <div class="container-fluid">
+    <form class="navbar-brand row align-items-center" style="width: 100%;" method="POST">
+      <div class="container">
+        <input type="text" class="form-control" placeholder="Ask Ahnaf's chatbot" id="prompt" name="promptt" required="">
+        <div style="height: 5px;"></div>
+        <button class="btn btn-primary" type="submit" style="width: 100%;">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>
+</body>
+</html>
