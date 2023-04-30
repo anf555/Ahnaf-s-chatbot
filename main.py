@@ -167,7 +167,6 @@ def banned():
 @app.route("/support")
 def support():
     return render_template("support.html")
-
 @app.route("/admin", methods=['GET', 'POST'])
 def admin():
     cookies = request.cookies
