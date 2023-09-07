@@ -8,4 +8,4 @@ from wordlist007 import *
 from wordlist008 import *
 from wordlist009 import *
 
-wordpack = [default_responds, hi, aaaaa]
+wordpack = [default_responds, hi]
