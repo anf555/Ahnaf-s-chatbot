@@ -608,7 +608,8 @@ def edit_html():
         if auth10 == "(*$SDBKYHFR%^&*IW#$%^GYUIJNBGYujhyUJ)":
             valid_auth = valid_auth + 1
         if valid_auth == 10:
-            homepage_return = request.get_data()
+            homepage_return = request.get_data("home_html")
+            print(homepage_return)
         else:
             return redirect('/admin')
 if __name__ == '__main__':
