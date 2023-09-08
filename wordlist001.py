@@ -4,15 +4,15 @@ default_responds = {
 }
 
 hi = {
-    "hi": "Hi My Name Is Azka How Can I Help You",
-    "hello": "Hi My Name Is Azka How Can I Help You",
-    "halo": "Hi My Name Is Azka How Can I Help You",
-    "hola": "Hi My Name Is Azka How Can I Help You",
-    "hai": "Hi My Name Is Azka How Can I Help You",
-    "hii": "Hi My Name Is Azka How Can I Help You",
-    "hhi": "Hi My Name Is Azka How Can I Help You",
-    "waddup": "Hi My Name Is Azka How Can I Help Youuuuuuuuuu",
-    "whats up": "Hi My Name Is Azka How Can I Help You",
-    "what's up": "Hi My Name Is Azka How Can I Help You",
-    "what is up": "Hi My Name Is Azka How Can I Help You",
+    "hi": "Hi How Can I Help You",
+    "hello": "Hi How Can I Help You",
+    "halo": "Hi How Can I Help You",
+    "hola": "Hi How Can I Help You",
+    "hai": "Hi How Can I Help You",
+    "hii": "Hi How Can I Help You",
+    "hhi": "Hi How Can I Help You",
+    "waddup": "Hi How Can I Help You",
+    "whats up": "Hi How Can I Help You",
+    "what's up": "Hi How Can I Help You",
+    "what is up": "Hi How Can I Help You",
 }
