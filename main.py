@@ -541,7 +541,7 @@ def badword_history():
     else:
         return redirect('/admin')
 
-@app.route("/edit-html", methods=['GET', 'POST'])
+@app.route("/user-list")
 def edit_html():
     cookies = request.cookies
     auth1 = str(cookies.get('auth1'))
@@ -554,39 +554,11 @@ def edit_html():
     auth8 = str(cookies.get('auth8'))
     auth9 = str(cookies.get('auth9'))
     auth10 = str(cookies.get('auth10'))
-    if request.method == 'GET':
-        all_auth = auth1+auth2+auth3+auth4+auth5+auth6+auth7+auth8+auth9+auth10
-        valid_auth = 0
-        if str(all_auth) == "NoneNoneNoneNoneNoneNoneNoneNoneNoneNone":
-            return redirect('/admin')
-        else:
-            if auth1 == "nd756F6tgce8vrt8hev84gy^&H$67g5hj(h)":
-                valid_auth = valid_auth + 1
-            if auth2 == "bfy7huy%^&gT5678iFdwertyujmnbvcxs^c@":
-                valid_auth = valid_auth + 1
-            if auth3 == "dr5678iKNBFE$56789okMNBGFRT^&8iknGFr!":
-                valid_auth = valid_auth + 1
-            if auth4 == "DRTYUnfr5678ijHT%^78oknbfde5678ikmngf":
-                valid_auth = valid_auth + 1
-            if auth5 == "e45^&8ikde34%^&8vfrtdsaqweRSwHyuikmT&*":
-                valid_auth = valid_auth + 1
-            if auth6 == "6789okMNBGweRSwHyuikjhs7ikde34%BVgyuik":
-                valid_auth = valid_auth + 1
-            if auth7 == "vrt8hev84gy^&H$6ujkMNBGweRSwHyuiikmT&*":
-                valid_auth = valid_auth + 1
-            if auth8 == "RTfd53827u(hj(Unf*&6fde5678iJD&^Dkmg9i":
-                valid_auth = valid_auth + 1
-            if auth9 == "^78oknbfde5678ikmngfRTYUnf*&VFR%^&6g9i":
-                valid_auth = valid_auth + 1
-            if auth10 == "(*$SDBKYHFR%^&*IW#$%^GYUIJNBGYujhyUJ)":
-                valid_auth = valid_auth + 1
-            if valid_auth == 10:
-                with open("templates/home.html", "r+") as homepage:
-                    return render_template("edit_html.html", home_html_placeholder=homepage.read())
-            else:
-                return redirect('/admin')
+    all_auth = auth1+auth2+auth3+auth4+auth5+auth6+auth7+auth8+auth9+auth10
+    valid_auth = 0
+    if str(all_auth) == "NoneNoneNoneNoneNoneNoneNoneNoneNoneNone":
+        return redirect('/admin')
     else:
-        valid_auth = 0
         if auth1 == "nd756F6tgce8vrt8hev84gy^&H$67g5hj(h)":
             valid_auth = valid_auth + 1
         if auth2 == "bfy7huy%^&gT5678iFdwertyujmnbvcxs^c@":
@@ -608,8 +580,7 @@ def edit_html():
         if auth10 == "(*$SDBKYHFR%^&*IW#$%^GYUIJNBGYujhyUJ)":
             valid_auth = valid_auth + 1
         if valid_auth == 10:
-            homepage_return = request.get_data("home_html")
-            print(homepage_return)
+            return render_template("user_list.html")
         else:
             return redirect('/admin')
 if __name__ == '__main__':

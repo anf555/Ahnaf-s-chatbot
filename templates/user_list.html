@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.108.0">
-    <title>Edit HTML</title>
+    <title>Train Chatbot</title>
     <link href={{ url_for('static', filename='bootstrap.min.css') }} rel="stylesheet">
 
     <style>
@@ -88,7 +88,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/train-chatbot">
+            <a class="nav-link" href="">
               <span data-feather="shopping-cart" class="align-text-bottom"></span>
               Train chatbot
             </a>
@@ -97,12 +97,6 @@
             <a class="nav-link" href="/badword-history">
               <span data-feather="users" class="align-text-bottom"></span>
               Badword history
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="/edit-html">
-              <span data-feather="bar-chart-2" class="align-text-bottom"></span>
-              Edit html
             </a>
           </li>
         </ul>
@@ -115,7 +109,7 @@
         </h6>
         <ul class="nav flex-column mb-2">
             <li class="nav-item">
-                <a class="nav-link" href="/add-user">
+                <a class="nav-link active" href="/user-list">
                   <span data-feather="file-text" class="align-text-bottom"></span>
                   User list
                 </a>
@@ -149,18 +143,27 @@
     </nav>
 
     <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-            <h1 class="h2">Edit Html</h1>
-        </div>
-        <form>
-            <div class="mb-3">
-                <div class="input-group" style="height: 1000px;">
-                    <span class="input-group-text">Homepage HTML</span>
-                    <textarea class="form-control" aria-label="Homepage HTML" id="home_html" name="home_html" required="" placeholder="{{ home_html_placeholder }}"></textarea>
-                </div>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Train Chatbot</h1>
+      </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">User ID</th>
+            <th scope="col">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for item in userlist %}
+          <tr>
+            <th scope="row">{{loop.index}}</th>
+            <td>item.userid</td>
+            <td>item.status</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
     </main>
   </div>
 </div>
