@@ -580,7 +580,16 @@ def edit_html():
         if auth10 == "(*$SDBKYHFR%^&*IW#$%^GYUIJNBGYujhyUJ)":
             valid_auth = valid_auth + 1
         if valid_auth == 10:
-            return render_template("user_list.html")
+            conn = sqlite3.connect('userdata.db')
+            c = conn.cursor()
+            c.execute("SELECT * FROM user")
+            tempdata = ""
+            for row in c.fetchall():
+                tempdata = row
+            c.close()
+            conn.commit()
+            conn.close()
+            return render_template("user_list.html", userlist=tempdata)
         else:
             return redirect('/admin')
 if __name__ == '__main__':
