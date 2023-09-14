@@ -1,7 +1,7 @@
 # This code is made by Ahnaf
 # DO NOT COPY/USE WITHOUT ANY PERMISSION FROM THE ORIGINAL OWNER (Ahnaf)
 
-from flask import Flask, render_template, request, make_response, redirect, flash, send_file
+from flask import Flask, render_template, request, make_response, redirect, flash, send_file, flash
 import sqlite3
 from chatbot import *
 import random
@@ -399,6 +399,122 @@ def download_log():
                 return send_file('server.log', as_attachment=True)
             else:
                 return redirect('/admin')
+            
+@app.route("/clear-log-badword", methods=['GET', 'POST'])
+def clear_log_badword():
+    cookies = request.cookies
+    auth1 = str(cookies.get('auth1'))
+    auth2 = str(cookies.get('auth2'))
+    auth3 = str(cookies.get('check_auth3'))
+    auth4 = str(cookies.get('auth4000'))
+    auth5 = str(cookies.get('auth5'))
+    auth6 = str(cookies.get('authentication6'))
+    auth7 = str(cookies.get('auth7'))
+    auth8 = str(cookies.get('auth8'))
+    auth9 = str(cookies.get('auth9'))
+    auth10 = str(cookies.get('auth10'))
+    if request.method == 'GET':
+        all_auth = auth1+auth2+auth3+auth4+auth5+auth6+auth7+auth8+auth9+auth10
+        valid_auth = 0
+        if str(all_auth) == "NoneNoneNoneNoneNoneNoneNoneNoneNoneNone":
+            return redirect('/admin')
+        else:
+            if auth1 == "nd756F6tgce8vrt8hev84gy^&H$67g5hj(h)":
+                valid_auth = valid_auth + 1
+            if auth2 == "bfy7huy%^&gT5678iFdwertyujmnbvcxs^c@":
+                valid_auth = valid_auth + 1
+            if auth3 == "dr5678iKNBFE$56789okMNBGFRT^&8iknGFr!":
+                valid_auth = valid_auth + 1
+            if auth4 == "DRTYUnfr5678ijHT%^78oknbfde5678ikmngf":
+                valid_auth = valid_auth + 1
+            if auth5 == "e45^&8ikde34%^&8vfrtdsaqweRSwHyuikmT&*":
+                valid_auth = valid_auth + 1
+            if auth6 == "6789okMNBGweRSwHyuikjhs7ikde34%BVgyuik":
+                valid_auth = valid_auth + 1
+            if auth7 == "vrt8hev84gy^&H$6ujkMNBGweRSwHyuiikmT&*":
+                valid_auth = valid_auth + 1
+            if auth8 == "RTfd53827u(hj(Unf*&6fde5678iJD&^Dkmg9i":
+                valid_auth = valid_auth + 1
+            if auth9 == "^78oknbfde5678ikmngfRTYUnf*&VFR%^&6g9i":
+                valid_auth = valid_auth + 1
+            if auth10 == "(*$SDBKYHFR%^&*IW#$%^GYUIJNBGYujhyUJ)":
+                valid_auth = valid_auth + 1
+            if valid_auth == 10:
+                return render_template("confirm_log_deletion.html")
+            else:
+                return redirect('/admin')
+    else:
+        valid_auth = 0
+        if auth1 == "nd756F6tgce8vrt8hev84gy^&H$67g5hj(h)":
+            valid_auth = valid_auth + 1
+        if auth2 == "bfy7huy%^&gT5678iFdwertyujmnbvcxs^c@":
+            valid_auth = valid_auth + 1
+        if auth3 == "dr5678iKNBFE$56789okMNBGFRT^&8iknGFr!":
+            valid_auth = valid_auth + 1
+        if auth4 == "DRTYUnfr5678ijHT%^78oknbfde5678ikmngf":
+            valid_auth = valid_auth + 1
+        if auth5 == "e45^&8ikde34%^&8vfrtdsaqweRSwHyuikmT&*":
+            valid_auth = valid_auth + 1
+        if auth6 == "6789okMNBGweRSwHyuikjhs7ikde34%BVgyuik":
+            valid_auth = valid_auth + 1
+        if auth7 == "vrt8hev84gy^&H$6ujkMNBGweRSwHyuiikmT&*":
+            valid_auth = valid_auth + 1
+        if auth8 == "RTfd53827u(hj(Unf*&6fde5678iJD&^Dkmg9i":
+            valid_auth = valid_auth + 1
+        if auth9 == "^78oknbfde5678ikmngfRTYUnf*&VFR%^&6g9i":
+            valid_auth = valid_auth + 1
+        if auth10 == "(*$SDBKYHFR%^&*IW#$%^GYUIJNBGYujhyUJ)":
+            valid_auth = valid_auth + 1
+        if valid_auth == 10:
+            with open('badword.txt', 'w+') as f:
+                f.close()
+            return redirect('/badword-history')
+        else:
+            return redirect('/admin')
+
+@app.route("/download-log-badword")
+def download_log():
+    cookies = request.cookies
+    auth1 = str(cookies.get('auth1'))
+    auth2 = str(cookies.get('auth2'))
+    auth3 = str(cookies.get('check_auth3'))
+    auth4 = str(cookies.get('auth4000'))
+    auth5 = str(cookies.get('auth5'))
+    auth6 = str(cookies.get('authentication6'))
+    auth7 = str(cookies.get('auth7'))
+    auth8 = str(cookies.get('auth8'))
+    auth9 = str(cookies.get('auth9'))
+    auth10 = str(cookies.get('auth10'))
+    if request.method == 'GET':
+        all_auth = auth1+auth2+auth3+auth4+auth5+auth6+auth7+auth8+auth9+auth10
+        valid_auth = 0
+        if str(all_auth) == "NoneNoneNoneNoneNoneNoneNoneNoneNoneNone":
+            return redirect('/admin')
+        else:
+            if auth1 == "nd756F6tgce8vrt8hev84gy^&H$67g5hj(h)":
+                valid_auth = valid_auth + 1
+            if auth2 == "bfy7huy%^&gT5678iFdwertyujmnbvcxs^c@":
+                valid_auth = valid_auth + 1
+            if auth3 == "dr5678iKNBFE$56789okMNBGFRT^&8iknGFr!":
+                valid_auth = valid_auth + 1
+            if auth4 == "DRTYUnfr5678ijHT%^78oknbfde5678ikmngf":
+                valid_auth = valid_auth + 1
+            if auth5 == "e45^&8ikde34%^&8vfrtdsaqweRSwHyuikmT&*":
+                valid_auth = valid_auth + 1
+            if auth6 == "6789okMNBGweRSwHyuikjhs7ikde34%BVgyuik":
+                valid_auth = valid_auth + 1
+            if auth7 == "vrt8hev84gy^&H$6ujkMNBGweRSwHyuiikmT&*":
+                valid_auth = valid_auth + 1
+            if auth8 == "RTfd53827u(hj(Unf*&6fde5678iJD&^Dkmg9i":
+                valid_auth = valid_auth + 1
+            if auth9 == "^78oknbfde5678ikmngfRTYUnf*&VFR%^&6g9i":
+                valid_auth = valid_auth + 1
+            if auth10 == "(*$SDBKYHFR%^&*IW#$%^GYUIJNBGYujhyUJ)":
+                valid_auth = valid_auth + 1
+            if valid_auth == 10:
+                return send_file('badword.txt', as_attachment=True)
+            else:
+                return redirect('/admin')
 
 @app.route("/train-chatbot", methods=['GET', 'POST'])
 def train_chatbot():
@@ -583,13 +699,141 @@ def edit_html():
             conn = sqlite3.connect('userdata.db')
             c = conn.cursor()
             c.execute("SELECT * FROM user")
-            tempdata = ""
-            for row in c.fetchall():
-                tempdata = row
+            tempdata = c.fetchall()
             c.close()
             conn.commit()
             conn.close()
             return render_template("user_list.html", userlist=tempdata)
+        else:
+            return redirect('/admin')
+        
+@app.route("/delete-user", methods=['GET', 'POST'])
+def delete_user():
+    cookies = request.cookies
+    auth1 = str(cookies.get('auth1'))
+    auth2 = str(cookies.get('auth2'))
+    auth3 = str(cookies.get('check_auth3'))
+    auth4 = str(cookies.get('auth4000'))
+    auth5 = str(cookies.get('auth5'))
+    auth6 = str(cookies.get('authentication6'))
+    auth7 = str(cookies.get('auth7'))
+    auth8 = str(cookies.get('auth8'))
+    auth9 = str(cookies.get('auth9'))
+    auth10 = str(cookies.get('auth10'))
+    all_auth = auth1+auth2+auth3+auth4+auth5+auth6+auth7+auth8+auth9+auth10
+    valid_auth = 0
+    if str(all_auth) == "NoneNoneNoneNoneNoneNoneNoneNoneNoneNone":
+        return redirect('/admin')
+    else:
+        if auth1 == "nd756F6tgce8vrt8hev84gy^&H$67g5hj(h)":
+            valid_auth = valid_auth + 1
+        if auth2 == "bfy7huy%^&gT5678iFdwertyujmnbvcxs^c@":
+            valid_auth = valid_auth + 1
+        if auth3 == "dr5678iKNBFE$56789okMNBGFRT^&8iknGFr!":
+            valid_auth = valid_auth + 1
+        if auth4 == "DRTYUnfr5678ijHT%^78oknbfde5678ikmngf":
+            valid_auth = valid_auth + 1
+        if auth5 == "e45^&8ikde34%^&8vfrtdsaqweRSwHyuikmT&*":
+            valid_auth = valid_auth + 1
+        if auth6 == "6789okMNBGweRSwHyuikjhs7ikde34%BVgyuik":
+            valid_auth = valid_auth + 1
+        if auth7 == "vrt8hev84gy^&H$6ujkMNBGweRSwHyuiikmT&*":
+            valid_auth = valid_auth + 1
+        if auth8 == "RTfd53827u(hj(Unf*&6fde5678iJD&^Dkmg9i":
+            valid_auth = valid_auth + 1
+        if auth9 == "^78oknbfde5678ikmngfRTYUnf*&VFR%^&6g9i":
+            valid_auth = valid_auth + 1
+        if auth10 == "(*$SDBKYHFR%^&*IW#$%^GYUIJNBGYujhyUJ)":
+            valid_auth = valid_auth + 1
+        if valid_auth == 10:
+            if request.method == 'GET':
+                return render_template("delete_user.html")
+            else:
+                userid1 = request.form["userid"]
+                if userid1 == request.form["userid2"]:
+                    conn = sqlite3.connect('userdata.db')
+                    c = conn.cursor()
+                    c.execute("SELECT * FROM user")
+                    tempdata1 = c.fetchall()
+                    c.execute("DELETE FROM user WHERE id=?", (userid1,))
+                    c.execute("SELECT * FROM user")
+                    tempdata2 = c.fetchall()
+                    if tempdata1 != tempdata2:
+                        flash("Successfully Deleted user ", userid1)
+                    else:
+                        flash("Cannot ban user, ", "database error.")
+                    c.close()
+                    conn.commit()
+                    conn.close()
+                    return render_template("delete_user.html")
+                else:
+                    flash("Error!, ", "Inavlid input.")
+                    return render_template("delete_user.html")
+        else:
+            return redirect('/admin')
+
+@app.route("/ban-user", methods=['GET', 'POST'])
+def ban_user():
+    cookies = request.cookies
+    auth1 = str(cookies.get('auth1'))
+    auth2 = str(cookies.get('auth2'))
+    auth3 = str(cookies.get('check_auth3'))
+    auth4 = str(cookies.get('auth4000'))
+    auth5 = str(cookies.get('auth5'))
+    auth6 = str(cookies.get('authentication6'))
+    auth7 = str(cookies.get('auth7'))
+    auth8 = str(cookies.get('auth8'))
+    auth9 = str(cookies.get('auth9'))
+    auth10 = str(cookies.get('auth10'))
+    all_auth = auth1+auth2+auth3+auth4+auth5+auth6+auth7+auth8+auth9+auth10
+    valid_auth = 0
+    if str(all_auth) == "NoneNoneNoneNoneNoneNoneNoneNoneNoneNone":
+        return redirect('/admin')
+    else:
+        if auth1 == "nd756F6tgce8vrt8hev84gy^&H$67g5hj(h)":
+            valid_auth = valid_auth + 1
+        if auth2 == "bfy7huy%^&gT5678iFdwertyujmnbvcxs^c@":
+            valid_auth = valid_auth + 1
+        if auth3 == "dr5678iKNBFE$56789okMNBGFRT^&8iknGFr!":
+            valid_auth = valid_auth + 1
+        if auth4 == "DRTYUnfr5678ijHT%^78oknbfde5678ikmngf":
+            valid_auth = valid_auth + 1
+        if auth5 == "e45^&8ikde34%^&8vfrtdsaqweRSwHyuikmT&*":
+            valid_auth = valid_auth + 1
+        if auth6 == "6789okMNBGweRSwHyuikjhs7ikde34%BVgyuik":
+            valid_auth = valid_auth + 1
+        if auth7 == "vrt8hev84gy^&H$6ujkMNBGweRSwHyuiikmT&*":
+            valid_auth = valid_auth + 1
+        if auth8 == "RTfd53827u(hj(Unf*&6fde5678iJD&^Dkmg9i":
+            valid_auth = valid_auth + 1
+        if auth9 == "^78oknbfde5678ikmngfRTYUnf*&VFR%^&6g9i":
+            valid_auth = valid_auth + 1
+        if auth10 == "(*$SDBKYHFR%^&*IW#$%^GYUIJNBGYujhyUJ)":
+            valid_auth = valid_auth + 1
+        if valid_auth == 10:
+            if request.method == 'GET':
+                return render_template("ban_user.html")
+            else:
+                userid1 = request.form["userid"]
+                if userid1 == request.form["userid2"]:
+                    conn = sqlite3.connect('userdata.db')
+                    c = conn.cursor()
+                    c.execute("SELECT * FROM user")
+                    tempdata1 = c.fetchall()
+                    c.execute("UPDATE user SET ban_status = ? WHERE id = ?", ("yes01banned", userid1,))
+                    c.execute("SELECT * FROM user")
+                    tempdata2 = c.fetchall()
+                    if tempdata1 != tempdata2:
+                        flash("Successfully Banned user ", userid1)
+                    else:
+                        flash("Cannot ban user, ", "database error.")
+                    c.close()
+                    conn.commit()
+                    conn.close()
+                    return render_template("delete_user.html")
+                else:
+                    flash("Error!, ", "Inavlid input.")
+                    return render_template("delete_user.html")
         else:
             return redirect('/admin')
 if __name__ == '__main__':

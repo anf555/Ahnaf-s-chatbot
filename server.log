@@ -1,156 +1,65 @@
-2023-09-09 15:08:35,914 - 127.0.0.1 - - [09/Sep/2023 15:08:35] "GET /admin HTTP/1.1" 200 -
-2023-09-09 15:08:36,178 - 127.0.0.1 - - [09/Sep/2023 15:08:36] "GET /static/sign-in.css HTTP/1.1" 200 -
-2023-09-09 15:08:36,180 - 127.0.0.1 - - [09/Sep/2023 15:08:36] "[36mGET /static/bootstrap.min.css HTTP/1.1[0m" 304 -
-2023-09-09 15:08:43,553 - 127.0.0.1 - - [09/Sep/2023 15:08:43] "POST /admin HTTP/1.1" 200 -
-2023-09-09 15:08:43,710 - 127.0.0.1 - - [09/Sep/2023 15:08:43] "GET /static/dashboard.css HTTP/1.1" 200 -
-2023-09-09 15:08:43,745 - 127.0.0.1 - - [09/Sep/2023 15:08:43] "[36mGET /static/bootstrap.min.css HTTP/1.1[0m" 304 -
-2023-09-09 15:08:53,786 - 127.0.0.1 - - [09/Sep/2023 15:08:53] "GET /edit-html HTTP/1.1" 200 -
-2023-09-09 15:08:53,957 - 127.0.0.1 - - [09/Sep/2023 15:08:53] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
-2023-09-09 15:08:53,995 - 127.0.0.1 - - [09/Sep/2023 15:08:53] "[36mGET /static/bootstrap.min.css HTTP/1.1[0m" 304 -
-2023-09-09 15:09:00,474 - 127.0.0.1 - - [09/Sep/2023 15:09:00] "GET /edit-html?home_html=aaaaaaa HTTP/1.1" 200 -
-2023-09-09 15:09:00,714 - 127.0.0.1 - - [09/Sep/2023 15:09:00] "[36mGET /static/bootstrap.min.css HTTP/1.1[0m" 304 -
-2023-09-09 15:09:00,716 - 127.0.0.1 - - [09/Sep/2023 15:09:00] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
-2023-09-09 15:09:58,326 - 127.0.0.1 - - [09/Sep/2023 15:09:58] "GET /edit-html?home_html=aaaaaaa HTTP/1.1" 200 -
-2023-09-09 15:09:58,605 - 127.0.0.1 - - [09/Sep/2023 15:09:58] "[36mGET /static/bootstrap.min.css HTTP/1.1[0m" 304 -
-2023-09-09 15:09:58,606 - 127.0.0.1 - - [09/Sep/2023 15:09:58] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
-2023-09-09 15:17:08,161 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2023-09-09 15:17:08,161 - [33mPress CTRL+C to quit[0m
-2023-09-09 15:17:08,162 -  * Restarting with stat
-2023-09-09 15:17:08,318 -  * Debugger is active!
-2023-09-09 15:17:08,319 -  * Debugger PIN: 128-115-682
-2023-09-09 15:17:11,996 - 127.0.0.1 - - [09/Sep/2023 15:17:11] "[33mGET /edit-html?home_html=aaaaaaa HTTP/1.1[0m" 404 -
-2023-09-09 15:17:13,773 - 127.0.0.1 - - [09/Sep/2023 15:17:13] "[33mGET /edit-html?home_html=aaaaaaa HTTP/1.1[0m" 404 -
-2023-09-09 15:17:23,600 - 127.0.0.1 - - [09/Sep/2023 15:17:23] "GET / HTTP/1.1" 200 -
-2023-09-09 15:17:23,813 - 127.0.0.1 - - [09/Sep/2023 15:17:23] "[36mGET /static/bootstrap.min.css HTTP/1.1[0m" 304 -
-2023-09-09 15:17:29,456 - 127.0.0.1 - - [09/Sep/2023 15:17:29] "GET /admin HTTP/1.1" 200 -
-2023-09-09 15:17:29,571 - 127.0.0.1 - - [09/Sep/2023 15:17:29] "[36mGET /static/bootstrap.min.css HTTP/1.1[0m" 304 -
-2023-09-09 15:17:29,616 - 127.0.0.1 - - [09/Sep/2023 15:17:29] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
-2023-09-09 15:17:35,298 - 127.0.0.1 - - [09/Sep/2023 15:17:35] "[35m[1mGET /user-list HTTP/1.1[0m" 500 -
-2023-09-09 15:17:35,510 - 127.0.0.1 - - [09/Sep/2023 15:17:35] "GET /user-list?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
-2023-09-09 15:17:35,621 - 127.0.0.1 - - [09/Sep/2023 15:17:35] "GET /user-list?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
-2023-09-09 15:17:36,110 - 127.0.0.1 - - [09/Sep/2023 15:17:36] "GET /user-list?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
-2023-09-09 15:17:36,239 - 127.0.0.1 - - [09/Sep/2023 15:17:36] "[36mGET /user-list?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
-2023-09-09 15:17:47,855 -  * Detected change in '/workspaces/Ahnaf-s-chatbot/main.py', reloading
-2023-09-09 15:17:47,885 -  * Restarting with stat
-2023-09-09 15:17:48,050 -  * Debugger is active!
-2023-09-09 15:17:48,051 -  * Debugger PIN: 128-115-682
-2023-09-09 15:17:48,358 - 127.0.0.1 - - [09/Sep/2023 15:17:48] "GET /user-list HTTP/1.1" 200 -
-2023-09-09 15:17:48,480 - 127.0.0.1 - - [09/Sep/2023 15:17:48] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
-2023-09-09 15:17:48,480 - 127.0.0.1 - - [09/Sep/2023 15:17:48] "[36mGET /static/bootstrap.min.css HTTP/1.1[0m" 304 -
-2023-09-09 15:17:51,378 - 127.0.0.1 - - [09/Sep/2023 15:17:51] "GET /badword-history HTTP/1.1" 200 -
-2023-09-09 15:17:51,522 - 127.0.0.1 - - [09/Sep/2023 15:17:51] "[36mGET /static/bootstrap.min.css HTTP/1.1[0m" 304 -
-2023-09-09 15:17:51,523 - 127.0.0.1 - - [09/Sep/2023 15:17:51] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
-2023-09-09 15:17:52,130 - 127.0.0.1 - - [09/Sep/2023 15:17:52] "GET /train-chatbot HTTP/1.1" 200 -
-2023-09-09 15:17:52,284 - 127.0.0.1 - - [09/Sep/2023 15:17:52] "[36mGET /static/bootstrap.min.css HTTP/1.1[0m" 304 -
-2023-09-09 15:17:52,285 - 127.0.0.1 - - [09/Sep/2023 15:17:52] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
-2023-09-09 15:17:52,752 - 127.0.0.1 - - [09/Sep/2023 15:17:52] "GET /admin HTTP/1.1" 200 -
-2023-09-09 15:17:53,068 - 127.0.0.1 - - [09/Sep/2023 15:17:53] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
-2023-09-09 15:17:53,069 - 127.0.0.1 - - [09/Sep/2023 15:17:53] "[36mGET /static/bootstrap.min.css HTTP/1.1[0m" 304 -
-2023-09-09 15:17:54,411 - 127.0.0.1 - - [09/Sep/2023 15:17:54] "GET /user-list HTTP/1.1" 200 -
-2023-09-09 15:17:54,599 - 127.0.0.1 - - [09/Sep/2023 15:17:54] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
-2023-09-09 15:17:54,600 - 127.0.0.1 - - [09/Sep/2023 15:17:54] "[36mGET /static/bootstrap.min.css HTTP/1.1[0m" 304 -
-2023-09-09 15:23:19,730 - 127.0.0.1 - - [09/Sep/2023 15:23:19] "GET /user-list HTTP/1.1" 200 -
-2023-09-09 15:23:19,953 - 127.0.0.1 - - [09/Sep/2023 15:23:19] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
-2023-09-09 15:23:19,956 - 127.0.0.1 - - [09/Sep/2023 15:23:19] "[36mGET /static/bootstrap.min.css HTTP/1.1[0m" 304 -
-2023-09-09 15:23:34,409 - 127.0.0.1 - - [09/Sep/2023 15:23:34] "GET /user-list HTTP/1.1" 200 -
-2023-09-09 15:23:34,573 - 127.0.0.1 - - [09/Sep/2023 15:23:34] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
-2023-09-09 15:23:34,616 - 127.0.0.1 - - [09/Sep/2023 15:23:34] "[36mGET /static/bootstrap.min.css HTTP/1.1[0m" 304 -
-2023-09-09 15:23:59,865 - 127.0.0.1 - - [09/Sep/2023 15:23:59] "GET /user-list HTTP/1.1" 200 -
-2023-09-09 15:24:00,022 - 127.0.0.1 - - [09/Sep/2023 15:24:00] "[36mGET /static/bootstrap.min.css HTTP/1.1[0m" 304 -
-2023-09-09 15:24:00,067 - 127.0.0.1 - - [09/Sep/2023 15:24:00] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
-2023-09-09 15:24:59,699 - 127.0.0.1 - - [09/Sep/2023 15:24:59] "GET /user-list HTTP/1.1" 200 -
-2023-09-09 15:24:59,881 - 127.0.0.1 - - [09/Sep/2023 15:24:59] "[36mGET /static/bootstrap.min.css HTTP/1.1[0m" 304 -
-2023-09-09 15:24:59,881 - 127.0.0.1 - - [09/Sep/2023 15:24:59] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
-2023-09-09 15:25:36,208 - 127.0.0.1 - - [09/Sep/2023 15:25:36] "GET /user-list HTTP/1.1" 200 -
-2023-09-09 15:25:36,337 - 127.0.0.1 - - [09/Sep/2023 15:25:36] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
-2023-09-09 15:25:36,338 - 127.0.0.1 - - [09/Sep/2023 15:25:36] "[36mGET /static/bootstrap.min.css HTTP/1.1[0m" 304 -
-2023-09-09 16:04:12,390 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2023-09-09 16:04:12,390 - [33mPress CTRL+C to quit[0m
-2023-09-09 16:04:12,391 -  * Restarting with stat
-2023-09-09 16:04:12,546 -  * Debugger is active!
-2023-09-09 16:04:12,550 -  * Debugger PIN: 391-798-960
-2023-09-09 16:04:51,717 -  * Detected change in '/workspaces/Ahnaf-s-chatbot/main.py', reloading
-2023-09-09 16:04:51,745 -  * Restarting with stat
-2023-09-09 16:04:51,903 -  * Debugger is active!
-2023-09-09 16:04:51,903 -  * Debugger PIN: 391-798-960
-2023-09-09 16:04:59,281 -  * Detected change in '/workspaces/Ahnaf-s-chatbot/main.py', reloading
-2023-09-09 16:04:59,313 -  * Restarting with stat
-2023-09-09 16:04:59,473 -  * Debugger is active!
-2023-09-09 16:04:59,474 -  * Debugger PIN: 391-798-960
-2023-09-09 16:05:19,386 -  * Detected change in '/workspaces/Ahnaf-s-chatbot/main.py', reloading
-2023-09-09 16:05:19,415 -  * Restarting with stat
-2023-09-09 16:08:33,883 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2023-09-09 16:08:33,883 - [33mPress CTRL+C to quit[0m
-2023-09-09 16:08:33,883 -  * Restarting with stat
-2023-09-09 16:08:34,039 -  * Debugger is active!
-2023-09-09 16:08:34,039 -  * Debugger PIN: 391-798-960
-2023-09-09 16:08:36,509 - 127.0.0.1 - - [09/Sep/2023 16:08:36] "[35m[1mGET /user-list HTTP/1.1[0m" 500 -
-2023-09-09 16:08:36,852 - 127.0.0.1 - - [09/Sep/2023 16:08:36] "[36mGET /user-list?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
-2023-09-09 16:08:36,852 - 127.0.0.1 - - [09/Sep/2023 16:08:36] "[36mGET /user-list?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
-2023-09-09 16:08:37,073 - 127.0.0.1 - - [09/Sep/2023 16:08:37] "[36mGET /user-list?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
-2023-09-09 16:08:37,222 - 127.0.0.1 - - [09/Sep/2023 16:08:37] "[36mGET /user-list?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
-2023-09-09 16:08:48,955 -  * Detected change in '/workspaces/Ahnaf-s-chatbot/main.py', reloading
-2023-09-09 16:08:48,983 -  * Restarting with stat
-2023-09-09 16:09:57,450 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2023-09-09 16:09:57,450 - [33mPress CTRL+C to quit[0m
-2023-09-09 16:09:57,450 -  * Restarting with stat
-2023-09-09 16:09:57,625 -  * Debugger is active!
-2023-09-09 16:09:57,625 -  * Debugger PIN: 391-798-960
-2023-09-09 16:10:00,508 - 127.0.0.1 - - [09/Sep/2023 16:10:00] "GET /user-list HTTP/1.1" 200 -
-2023-09-09 16:10:00,672 - 127.0.0.1 - - [09/Sep/2023 16:10:00] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
-2023-09-09 16:10:00,683 - 127.0.0.1 - - [09/Sep/2023 16:10:00] "[36mGET /static/bootstrap.min.css HTTP/1.1[0m" 304 -
-2023-09-09 16:10:03,567 - 127.0.0.1 - - [09/Sep/2023 16:10:03] "GET /user-list HTTP/1.1" 200 -
-2023-09-09 16:10:03,694 - 127.0.0.1 - - [09/Sep/2023 16:10:03] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
-2023-09-09 16:10:03,736 - 127.0.0.1 - - [09/Sep/2023 16:10:03] "[36mGET /static/bootstrap.min.css HTTP/1.1[0m" 304 -
-2023-09-09 16:10:12,946 - 127.0.0.1 - - [09/Sep/2023 16:10:12] "GET / HTTP/1.1" 200 -
-2023-09-09 16:10:13,189 - 127.0.0.1 - - [09/Sep/2023 16:10:13] "[36mGET /static/bootstrap.min.css HTTP/1.1[0m" 304 -
-2023-09-09 16:10:14,260 - 127.0.0.1 - - [09/Sep/2023 16:10:14] "[32mGET /chatbot HTTP/1.1[0m" 302 -
-2023-09-09 16:10:14,435 - '4184377' Signed up
-2023-09-09 16:10:14,436 - 127.0.0.1 - - [09/Sep/2023 16:10:14] "[32mGET /login HTTP/1.1[0m" 302 -
-2023-09-09 16:10:14,498 - '4184377' User logged in
-2023-09-09 16:10:14,500 - 127.0.0.1 - - [09/Sep/2023 16:10:14] "GET /chatbot HTTP/1.1" 200 -
-2023-09-09 16:10:14,648 - 127.0.0.1 - - [09/Sep/2023 16:10:14] "[36mGET /static/bootstrap.min.css HTTP/1.1[0m" 304 -
-2023-09-09 16:10:18,170 - '4184377' User logged in
-2023-09-09 16:10:18,170 - Prompt Request : 'test' by : 4184377
-2023-09-09 16:10:18,170 - New unrecoqnized word : 'test' by : 4184377
-2023-09-09 16:10:18,171 - 127.0.0.1 - - [09/Sep/2023 16:10:18] "POST /chatbot HTTP/1.1" 200 -
-2023-09-09 16:10:18,296 - 127.0.0.1 - - [09/Sep/2023 16:10:18] "[36mGET /static/bootstrap.min.css HTTP/1.1[0m" 304 -
-2023-09-09 16:10:22,321 - 127.0.0.1 - - [09/Sep/2023 16:10:22] "GET /user-list HTTP/1.1" 200 -
-2023-09-09 16:10:22,436 - 127.0.0.1 - - [09/Sep/2023 16:10:22] "[36mGET /static/bootstrap.min.css HTTP/1.1[0m" 304 -
-2023-09-09 16:10:22,436 - 127.0.0.1 - - [09/Sep/2023 16:10:22] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
-2023-09-09 16:10:26,883 - 127.0.0.1 - - [09/Sep/2023 16:10:26] "GET /user-list HTTP/1.1" 200 -
-2023-09-09 16:10:26,981 - 127.0.0.1 - - [09/Sep/2023 16:10:26] "[36mGET /static/bootstrap.min.css HTTP/1.1[0m" 304 -
-2023-09-09 16:10:26,983 - 127.0.0.1 - - [09/Sep/2023 16:10:26] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
-2023-09-09 16:10:27,386 - 127.0.0.1 - - [09/Sep/2023 16:10:27] "GET /user-list HTTP/1.1" 200 -
-2023-09-09 16:10:27,504 - 127.0.0.1 - - [09/Sep/2023 16:10:27] "[36mGET /static/bootstrap.min.css HTTP/1.1[0m" 304 -
-2023-09-09 16:10:27,505 - 127.0.0.1 - - [09/Sep/2023 16:10:27] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
-2023-09-09 16:10:27,806 - 127.0.0.1 - - [09/Sep/2023 16:10:27] "GET /user-list HTTP/1.1" 200 -
-2023-09-09 16:10:27,934 - 127.0.0.1 - - [09/Sep/2023 16:10:27] "[36mGET /static/bootstrap.min.css HTTP/1.1[0m" 304 -
-2023-09-09 16:10:27,936 - 127.0.0.1 - - [09/Sep/2023 16:10:27] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
-2023-09-09 16:10:28,242 - 127.0.0.1 - - [09/Sep/2023 16:10:28] "GET /user-list HTTP/1.1" 200 -
-2023-09-09 16:10:28,370 - 127.0.0.1 - - [09/Sep/2023 16:10:28] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
-2023-09-09 16:10:28,371 - 127.0.0.1 - - [09/Sep/2023 16:10:28] "[36mGET /static/bootstrap.min.css HTTP/1.1[0m" 304 -
-2023-09-09 16:10:28,509 - 127.0.0.1 - - [09/Sep/2023 16:10:28] "GET /user-list HTTP/1.1" 200 -
-2023-09-09 16:10:28,623 - 127.0.0.1 - - [09/Sep/2023 16:10:28] "[36mGET /static/bootstrap.min.css HTTP/1.1[0m" 304 -
-2023-09-09 16:10:28,624 - 127.0.0.1 - - [09/Sep/2023 16:10:28] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
-2023-09-09 16:10:28,771 - 127.0.0.1 - - [09/Sep/2023 16:10:28] "GET /user-list HTTP/1.1" 200 -
-2023-09-09 16:10:28,886 - 127.0.0.1 - - [09/Sep/2023 16:10:28] "[36mGET /static/bootstrap.min.css HTTP/1.1[0m" 304 -
-2023-09-09 16:10:28,888 - 127.0.0.1 - - [09/Sep/2023 16:10:28] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
-2023-09-09 16:10:29,270 - 127.0.0.1 - - [09/Sep/2023 16:10:29] "GET /user-list HTTP/1.1" 200 -
-2023-09-09 16:10:29,380 - 127.0.0.1 - - [09/Sep/2023 16:10:29] "[36mGET /static/bootstrap.min.css HTTP/1.1[0m" 304 -
-2023-09-09 16:10:29,382 - 127.0.0.1 - - [09/Sep/2023 16:10:29] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
-2023-09-09 16:10:29,762 - 127.0.0.1 - - [09/Sep/2023 16:10:29] "GET /user-list HTTP/1.1" 200 -
-2023-09-09 16:10:29,873 - 127.0.0.1 - - [09/Sep/2023 16:10:29] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
-2023-09-09 16:10:29,874 - 127.0.0.1 - - [09/Sep/2023 16:10:29] "[36mGET /static/bootstrap.min.css HTTP/1.1[0m" 304 -
-2023-09-09 16:10:30,002 - 127.0.0.1 - - [09/Sep/2023 16:10:30] "GET /user-list HTTP/1.1" 200 -
-2023-09-09 16:10:30,107 - 127.0.0.1 - - [09/Sep/2023 16:10:30] "[36mGET /static/bootstrap.min.css HTTP/1.1[0m" 304 -
-2023-09-09 16:10:30,107 - 127.0.0.1 - - [09/Sep/2023 16:10:30] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
-2023-09-09 16:10:35,130 - '4184377' User logged in
-2023-09-09 16:10:35,130 - Prompt Request : 'test' by : 4184377
-2023-09-09 16:10:35,130 - New unrecoqnized word : 'test' by : 4184377
-2023-09-09 16:10:35,131 - 127.0.0.1 - - [09/Sep/2023 16:10:35] "POST /chatbot HTTP/1.1" 200 -
-2023-09-09 16:10:35,252 - 127.0.0.1 - - [09/Sep/2023 16:10:35] "[36mGET /static/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-09-14 08:03:07,045 - 127.0.0.1 - - [14/Sep/2023 08:03:07] "[32mPOST /clear-log HTTP/1.1[0m" 302 -
+2023-09-14 08:03:07,118 - 127.0.0.1 - - [14/Sep/2023 08:03:07] "GET /server-log HTTP/1.1" 200 -
+2023-09-14 08:03:07,251 - 127.0.0.1 - - [14/Sep/2023 08:03:07] "[36mGET /static/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-09-14 08:03:07,252 - 127.0.0.1 - - [14/Sep/2023 08:03:07] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+2023-09-14 08:03:09,956 - 127.0.0.1 - - [14/Sep/2023 08:03:09] "GET /delete-user HTTP/1.1" 200 -
+2023-09-14 08:03:10,060 - 127.0.0.1 - - [14/Sep/2023 08:03:10] "[36mGET /static/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-09-14 08:03:10,079 - 127.0.0.1 - - [14/Sep/2023 08:03:10] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+2023-09-14 08:03:10,080 - 127.0.0.1 - - [14/Sep/2023 08:03:10] "[36mGET /static/bootstrap.min.js HTTP/1.1[0m" 304 -
+2023-09-14 08:03:11,383 - 127.0.0.1 - - [14/Sep/2023 08:03:11] "GET /user-list HTTP/1.1" 200 -
+2023-09-14 08:03:11,528 - 127.0.0.1 - - [14/Sep/2023 08:03:11] "[36mGET /static/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-09-14 08:03:11,532 - 127.0.0.1 - - [14/Sep/2023 08:03:11] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+2023-09-14 08:03:12,383 - 127.0.0.1 - - [14/Sep/2023 08:03:12] "GET /delete-user HTTP/1.1" 200 -
+2023-09-14 08:03:12,496 - 127.0.0.1 - - [14/Sep/2023 08:03:12] "[36mGET /static/bootstrap.min.css HTTP/1.1[0m" 304 -
+2023-09-14 08:03:12,503 - 127.0.0.1 - - [14/Sep/2023 08:03:12] "[36mGET /static/bootstrap.min.js HTTP/1.1[0m" 304 -
+2023-09-14 08:03:12,514 - 127.0.0.1 - - [14/Sep/2023 08:03:12] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+2023-09-14 08:03:42,177 -  * Detected change in '/workspaces/Ahnaf-s-chatbot/main.py', reloading
+2023-09-14 08:03:42,206 -  * Restarting with stat
+2023-09-14 08:03:42,366 -  * Debugger is active!
+2023-09-14 08:03:42,366 -  * Debugger PIN: 697-250-029
+2023-09-14 08:03:44,520 -  * Detected change in '/workspaces/Ahnaf-s-chatbot/main.py', reloading
+2023-09-14 08:03:44,555 -  * Restarting with stat
+2023-09-14 08:03:44,909 -  * Debugger is active!
+2023-09-14 08:03:44,909 -  * Debugger PIN: 697-250-029
+2023-09-14 08:03:51,611 -  * Detected change in '/workspaces/Ahnaf-s-chatbot/main.py', reloading
+2023-09-14 08:03:51,637 -  * Restarting with stat
+2023-09-14 08:03:51,813 -  * Debugger is active!
+2023-09-14 08:03:51,814 -  * Debugger PIN: 697-250-029
+2023-09-14 08:04:06,752 -  * Detected change in '/workspaces/Ahnaf-s-chatbot/main.py', reloading
+2023-09-14 08:04:06,787 -  * Restarting with stat
+2023-09-14 08:04:06,958 -  * Debugger is active!
+2023-09-14 08:04:06,958 -  * Debugger PIN: 697-250-029
+2023-09-14 08:04:10,321 -  * Detected change in '/workspaces/Ahnaf-s-chatbot/main.py', reloading
+2023-09-14 08:04:10,361 -  * Restarting with stat
+2023-09-14 08:04:10,577 -  * Debugger is active!
+2023-09-14 08:04:10,577 -  * Debugger PIN: 697-250-029
+2023-09-14 08:04:13,111 -  * Detected change in '/workspaces/Ahnaf-s-chatbot/main.py', reloading
+2023-09-14 08:04:13,150 -  * Restarting with stat
+2023-09-14 08:04:13,483 -  * Debugger is active!
+2023-09-14 08:04:13,483 -  * Debugger PIN: 697-250-029
+2023-09-14 08:04:15,994 -  * Detected change in '/workspaces/Ahnaf-s-chatbot/main.py', reloading
+2023-09-14 08:04:16,094 -  * Restarting with stat
+2023-09-14 08:04:16,382 -  * Debugger is active!
+2023-09-14 08:04:16,382 -  * Debugger PIN: 697-250-029
+2023-09-14 08:04:28,264 -  * Detected change in '/workspaces/Ahnaf-s-chatbot/main.py', reloading
+2023-09-14 08:04:28,295 -  * Restarting with stat
+2023-09-14 08:04:28,457 -  * Debugger is active!
+2023-09-14 08:04:28,458 -  * Debugger PIN: 697-250-029
+2023-09-14 08:04:43,475 -  * Detected change in '/workspaces/Ahnaf-s-chatbot/main.py', reloading
+2023-09-14 08:04:43,505 -  * Restarting with stat
+2023-09-14 08:04:43,668 -  * Debugger is active!
+2023-09-14 08:04:43,669 -  * Debugger PIN: 697-250-029
+2023-09-14 08:04:45,952 -  * Detected change in '/workspaces/Ahnaf-s-chatbot/main.py', reloading
+2023-09-14 08:04:45,990 -  * Restarting with stat
+2023-09-14 08:04:46,238 -  * Debugger is active!
+2023-09-14 08:04:46,239 -  * Debugger PIN: 697-250-029
+2023-09-14 08:04:49,982 -  * Detected change in '/workspaces/Ahnaf-s-chatbot/main.py', reloading
+2023-09-14 08:04:50,022 -  * Restarting with stat
+2023-09-14 08:04:50,279 -  * Debugger is active!
+2023-09-14 08:04:50,279 -  * Debugger PIN: 697-250-029
+2023-09-14 08:04:57,543 -  * Detected change in '/workspaces/Ahnaf-s-chatbot/main.py', reloading
+2023-09-14 08:04:57,571 -  * Restarting with stat
+2023-09-14 08:04:57,750 -  * Debugger is active!
+2023-09-14 08:04:57,750 -  * Debugger PIN: 697-250-029
+2023-09-14 08:08:01,302 -  * Detected change in '/workspaces/Ahnaf-s-chatbot/main.py', reloading
+2023-09-14 08:08:01,330 -  * Restarting with stat
