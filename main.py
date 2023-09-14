@@ -473,7 +473,7 @@ def clear_log_badword():
             return redirect('/admin')
 
 @app.route("/download-log-badword")
-def download_log():
+def download_log_badword():
     cookies = request.cookies
     auth1 = str(cookies.get('auth1'))
     auth2 = str(cookies.get('auth2'))
