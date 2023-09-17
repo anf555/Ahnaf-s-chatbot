@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.108.0">
+    <title>Unban User</title>
+    <link href={{ url_for('static', filename='bootstrap.min.css') }} rel="stylesheet">
+    <script src={{ url_for('static', filename='bootstrap.min.js') }}></script>
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    <link href={{ url_for('static', filename='dashboard.css') }} rel="stylesheet">
+  </head>
+  <body>
+    
+<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="#">Ahnaf's Chatbot Dashboard</a>
+</header>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+      <div class="position-sticky pt-3 sidebar-sticky">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/admin">
+              <span data-feather="home" class="align-text-bottom"></span>
+              Dashboard
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/server-log">
+              <span data-feather="file" class="align-text-bottom"></span>
+              Server log
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">
+              <span data-feather="shopping-cart" class="align-text-bottom"></span>
+              Train chatbot
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/badword-history">
+              <span data-feather="users" class="align-text-bottom"></span>
+              Badword history
+            </a>
+          </li>
+        </ul>
+
+        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted text-uppercase">
+          <span>User</span>
+          <a class="link-secondary">
+            <span data-feather="plus-circle" class="align-text-bottom"></span>
+          </a>
+        </h6>
+        <ul class="nav flex-column mb-2">
+            <li class="nav-item">
+                <a class="nav-link" href="/user-list">
+                  <span data-feather="file-text" class="align-text-bottom"></span>
+                  User list
+                </a>
+              </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/delete-user">
+              <span data-feather="file-text" class="align-text-bottom"></span>
+              Delete user
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/ban-user">
+              <span data-feather="file-text" class="align-text-bottom"></span>
+              Ban user
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/unban-user">
+              <span data-feather="file-text" class="align-text-bottom"></span>
+              Unban user
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Unban User</h1>
+      </div>
+      <form method="post">
+        <div class="mb-3">
+          <label for="userid" class="form-label">User ID</label>
+          <input type="text" class="form-control" id="userid" name="userid" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">Please input user id to unban.</div>
+        </div>
+        <div class="mb-3">
+          <label for="userid" class="form-label">Confirm User ID</label>
+          <input type="text" class="form-control" id="userid2" name="userid2" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">Please confirm user id to make sure no accidental unban.</div>
+        </div>
+        <button type="submit" class="btn btn-danger">Unban User</button>
+      </form>
+      <div style="height: 20px;"></div>
+      {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+      {% for category, message in messages %}
+      <div class="alert alert-success alert-dismissible fade show" role="alert">
+        {% for category, message in messages %}
+        {{message}}<strong>{{category}}</strong>
+        {% endfor %}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+      {% endfor %}
+      {% endif %}
+      {% endwith %}
+    </main>
+  </div>
+</div>
+  </body>
+</html>
